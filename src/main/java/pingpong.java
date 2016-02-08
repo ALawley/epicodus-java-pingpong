@@ -3,7 +3,9 @@ public class PingPong {
 
   public String isPingPong(Integer number) {
     String result = "";
-    if ( number % 3 == 0 ) {
+    if ( number % 15 == 0 ) {
+      result = "pingpong";
+    } else if ( number % 3 == 0 ) {
       result = "ping";
     } else if ( number % 5 == 0 ) {
       result = "pong";
